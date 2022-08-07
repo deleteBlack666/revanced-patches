@@ -5,6 +5,8 @@ import app.revanced.patcher.annotation.Name
 import app.revanced.patcher.annotation.Version
 import app.revanced.patcher.data.impl.BytecodeData
 import app.revanced.patcher.extensions.replaceInstruction
+import app.revanced.patcher.extensions.addInstructions
+import app.revanced.patcher.extensions.removeInstruction
 import app.revanced.patcher.fingerprint.method.utils.MethodFingerprintUtils.resolve
 import app.revanced.patcher.patch.PatchResult
 import app.revanced.patcher.patch.PatchResultError
@@ -44,9 +46,14 @@ class HideInfocardSuggestionsPatch : BytecodePatch(
 
         val index = implementation.instructions.indexOfFirst { ((it as? BuilderInstruction35c)?.reference.toString() == "Landroid/view/View;->setVisibility(I)V") }
 
-        method.replaceInstruction(index, """
-            invoke-static {p1}, Lapp/revanced/integrations/patches/HideInfoCardSuggestionsPatch;->hideInfoCardSuggestions(Landroid/view/View;)V
-        """)
+        method.removeInstruction(index)
+        method.addInstructions(
+            index, """
+            invoke-static {}, Lapp/revanced/integrations/patches/HideSuggestionsPatch;->hideSuggestions()I
+            move-result v1
+            invoke-virtual {p1,v1}, Landroid/view/View;->setVisibility(I)V
+        """
+        )
 
         return PatchResultSuccess()
     }

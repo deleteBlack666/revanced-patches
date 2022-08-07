@@ -131,6 +131,7 @@ class GeneralBytecodeAdsPatch : BytecodePatch() {
                                     mutableMethod!!.implementation!!.removeInstruction(removeIndex)
                                 }
 
+                                // need further modification
                                 resourceIds[3], resourceIds[4], resourceIds[5] -> { // end screen ads
                                     //  and is followed by an instruction with the mnemonic IPUT_OBJECT
                                     val insertIndex = index + 7
@@ -145,10 +146,10 @@ class GeneralBytecodeAdsPatch : BytecodePatch() {
                                     // TODO: dynamically get registers
                                     mutableMethod!!.addInstructions(
                                         insertIndex, """
-                                                const/16 v1, 0x8
+                                                invoke-static {}, Lapp/revanced/integrations/patches/HideInfoCardSuggestionsPatch;->hideInfoCardSuggestions()I
+                                                move-result v1
                                                 invoke-virtual {v0,v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
-                                            """
-                                    )
+                                            """                                    )
                                 }
 
                                 resourceIds[6] -> {
