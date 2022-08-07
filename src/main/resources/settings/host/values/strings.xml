@@ -57,9 +57,9 @@
     <string name="revanced_new_actionbar_title">Wide search bar</string>
     <string name="revanced_new_actionbar_summary_off">Search bar style is defined by the app</string>
     <string name="revanced_new_actionbar_summary_on">Forcing wide search bar</string>
-    <string name="revanced_shorts_button_title">Show shorts button</string>
-    <string name="revanced_shorts_button_summary_off">Shorts button is hidden</string>
-    <string name="revanced_shorts_button_summary_on">Shorts button is shown</string>
+    <string name="revanced_shorts_button_title">Shorts Button</string>
+    <string name="revanced_shorts_button_summary_off">Shorts Button is hidden</string>
+    <string name="revanced_shorts_button_summary_on">Shorts Button is shown</string>
     <string name="revanced_fullscreen_panels_title">Fullscreen panels</string>
     <string name="revanced_fullscreen_panels_summary_off">Fullscreen panels are hidden</string>
     <string name="revanced_fullscreen_panels_summary_on">Fullscreen panels are shown</string>
@@ -164,8 +164,8 @@
 
     <string name="microg_notification_settings">Notification settings</string>
     <string name="microg_notification_settings_summary">"1. Google device registration and Cloud Messaging need to be enabled for notifications.
-        2. ReVanced needs to be shown as registered under Cloud Messaging.
-        3. Current State in Cloud Messaging must be Connected."</string>
+2. ReVanced needs to be shown as registered under Cloud Messaging.
+3. Current State in Cloud Messaging must be Connected."</string>
     <string name="microg_settings">MicroG settings</string>
     <string name="revanced_settings">ReVanced settings</string>
 
@@ -179,7 +179,7 @@
 
     <string name="pref_subtitles_scale_normal">Normal</string>
 
-    <string name="litho_shorts_shelf">Shorts Shelf</string>
+    <string name="litho_shorts_shelf">Shorts Shelf removal</string>
     <string name="litho_shorts_shelf_off">Shorts Shelf removal is turned off</string>
     <string name="litho_shorts_shelf_on">Shorts Shelf removal is turned on</string>
 
@@ -187,7 +187,7 @@
     <string name="revanced_create_button_summary_on">Create Button is shown</string>
     <string name="revanced_create_button_title">Create Button</string>
 
-    <string name="litho_community_guidelines">Community Guidelines</string>
+    <string name="litho_community_guidelines">Community Guidelines removal</string>
     <string name="litho_community_guidelines_off">Community Guidelines removal is turned off</string>
     <string name="litho_community_guidelines_on">Community Guidelines removal is turned on</string>
 

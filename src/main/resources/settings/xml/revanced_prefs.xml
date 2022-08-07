@@ -4,9 +4,9 @@
     <PreferenceCategory
             android:layout_height="match_parent"
             android:title="@string/revanced_settings" />
-    <PreferenceScreen android:title="@string/revanced_codec_override_title" android:key="revanced_override_codec">
+    <!--<PreferenceScreen android:title="@string/revanced_codec_override_title" android:key="revanced_override_codec">
         <SwitchPreference android:title="@string/revanced_vp9_title" android:key="revanced_override_codec_enabled" android:defaultValue="false" android:summaryOn="@string/revanced_vp9_summary_on" android:summaryOff="@string/revanced_vp9_summary_off" />
-    </PreferenceScreen>
+    </PreferenceScreen>-->
     <PreferenceScreen android:title="@string/revanced_video_settings_title" android:key="video_settings">
         <SwitchPreference android:title="@string/revanced_old_style_quality_settings_title" android:key="revanced_use_old_style_quality_settings" android:defaultValue="true" android:summaryOn="@string/revanced_old_style_quality_settings_summary_on" android:summaryOff="@string/revanced_old_style_quality_settings_summary_off" />
         <ListPreference android:title="@string/revanced_preferred_video_speed_title" android:key="revanced_pref_video_speed" android:summary="@string/revanced_preferred_video_speed_summary" />
@@ -141,8 +141,8 @@
         <SwitchPreference android:title="@string/revanced_autoplay_button_title" android:key="revanced_autoplay_button_enabled" android:defaultValue="false" android:summaryOn="@string/revanced_autoplay_button_summary_on" android:summaryOff="@string/revanced_autoplay_button_summary_off" />
         <!--<SwitchPreference android:title="@string/revanced_tablet_miniplayer_title" android:key="revanced_tablet_miniplayer" android:defaultValue="false" android:summaryOn="@string/revanced_tablet_miniplayer_summary_on" android:summaryOff="@string/revanced_tablet_miniplayer_summary_off" />-->
         <SwitchPreference android:title="@string/revanced_create_button_title" android:key="revanced_create_button_enabled" android:defaultValue="false" android:summaryOn="@string/revanced_create_button_summary_on" android:summaryOff="@string/revanced_create_button_summary_off" />
-        <SwitchPreference android:title="@string/revanced_new_actionbar_title" android:key="revanced_new_actionbar" android:defaultValue="false" android:summaryOn="@string/revanced_new_actionbar_summary_on" android:summaryOff="@string/revanced_new_actionbar_summary_off" />
         <SwitchPreference android:title="@string/revanced_shorts_button_title" android:key="revanced_shorts_button_enabled" android:defaultValue="false" android:summaryOn="@string/revanced_shorts_button_summary_on" android:summaryOff="@string/revanced_shorts_button_summary_off" />
+        <SwitchPreference android:title="@string/revanced_new_actionbar_title" android:key="revanced_new_actionbar" android:defaultValue="false" android:summaryOn="@string/revanced_new_actionbar_summary_on" android:summaryOff="@string/revanced_new_actionbar_summary_off" />
         <SwitchPreference android:title="@string/revanced_fullscreen_panels_title" android:key="revanced_fullscreen_panels_enabled" android:defaultValue="false" android:summaryOn="@string/revanced_fullscreen_panels_summary_on" android:summaryOff="@string/revanced_fullscreen_panels_summary_off" />
     </PreferenceScreen>
     <PreferenceScreen android:title="@string/revanced_misc_title" android:key="misc_screen">
@@ -154,14 +154,14 @@
         <SwitchPreference android:title="@string/revanced_minimized_playback" android:key="revanced_enable_minimized_playback" android:defaultValue="true" android:summaryOn="@string/revanced_minimized_playback_on" android:summaryOff="@string/revanced_minimized_playback_off" />
     </PreferenceScreen>
     <PreferenceScreen android:title="@string/revanced_swipe_title" android:key="swipe_screen" android:summary="@string/revanced_swipe_screen_summary">
-        <SwitchPreference android:title="@string/revanced_swipe_brightness_title" android:key="revanced_enable_swipe_brightness" android:defaultValue="false" android:summaryOn="@string/revanced_swipe_brightness_summary_on" android:summaryOff="@string/revanced_swipe_brightness_summary_off" />
-        <SwitchPreference android:title="@string/revanced_swipe_volume_title" android:key="revanced_enable_swipe_volume" android:defaultValue="false" android:summaryOn="@string/revanced_swipe_volume_summary_on" android:summaryOff="@string/revanced_swipe_volume_summary_off" />
+        <SwitchPreference android:title="@string/revanced_swipe_brightness_title" android:key="revanced_enable_swipe_brightness" android:defaultValue="true" android:summaryOn="@string/revanced_swipe_brightness_summary_on" android:summaryOff="@string/revanced_swipe_brightness_summary_off" />
+        <SwitchPreference android:title="@string/revanced_swipe_volume_title" android:key="revanced_enable_swipe_volume" android:defaultValue="true" android:summaryOn="@string/revanced_swipe_volume_summary_on" android:summaryOff="@string/revanced_swipe_volume_summary_off" />
         <SwitchPreference android:title="@string/revanced_swipe_pts_title" android:key="revanced_enable_press_to_swipe" android:defaultValue="false" android:summaryOn="@string/revanced_swipe_pts_summary_on" android:summaryOff="@string/revanced_swipe_pts_summary_off" />
         <SwitchPreference android:title="@string/revanced_swipe_pts_haptic_title" android:key="revanced_enable_swipe_haptic_feedback" android:defaultValue="false" android:summaryOn="@string/revanced_swipe_pts_haptic_summary_on" android:summaryOff="@string/revanced_swipe_pts_haptic_summary_off" />
         <EditTextPreference android:inputType="number" android:title="@string/revanced_swipe_overlay_timeout_title" android:key="revanced_swipe_overlay_timeout" android:summary="@string/revanced_swipe_overlay_timeout_summary" android:defaultValue="500" />
         <EditTextPreference android:inputType="number" android:title="@string/revanced_swipe_overlay_text_size_title" android:key="revanced_swipe_overlay_text_size" android:summary="@string/revanced_swipe_overlay_text_size_summary" android:defaultValue="22" />
         <EditTextPreference android:inputType="number" android:title="@string/revanced_swipe_overlay_bg_alpha_title" android:key="revanced_swipe_overlay_background_alpha" android:summary="@string/revanced_swipe_overlay_bg_alpha_summary" android:defaultValue="127" />
-        <EditTextPreference android:inputType="number" android:title="@string/revanced_swipe_magnitude_threshold_title" android:key="revanced_swipe_magnitude_threshold" android:summary="@string/revanced_swipe_magnitude_threshold_summary" android:defaultValue="30" />
+        <EditTextPreference android:inputType="number" android:title="@string/revanced_swipe_magnitude_threshold_title" android:key="revanced_swipe_magnitude_threshold" android:summary="@string/revanced_swipe_magnitude_threshold_summary" android:defaultValue="0" />
     </PreferenceScreen>
     <PreferenceScreen android:title="@string/revanced_buffer_title" android:key="buffer_screen">
         <EditTextPreference android:inputType="number" android:title="@string/revanced_maximum_buffer_title" android:key="revanced_pref_max_buffer_ms" android:summary="@string/revanced_maximum_buffer_summary" android:defaultValue="120000" />
