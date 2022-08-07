@@ -50,6 +50,12 @@
     <string name="revanced_support_summary">Support links</string>
     <string name="revanced_support_title">Support</string>
     <string name="revanced_video_settings_title">Video settings</string>
+    <string name="revanced_video_quality_common_error">Failed to set quality</string>
+    <string name="revanced_video_quality_internet_error">No internet connection</string>
+    <string name="revanced_video_quality_wifi">Changing default Wi-Fi quality to: </string>
+    <string name="revanced_video_quality_wifi_error">Failed to change default WI-FI quality</string>
+    <string name="revanced_video_quality_mobile">Changing default mobile data quality to: </string>
+    <string name="revanced_video_quality_mobile_error">Failed to change default mobile data quality</string>
     <string name="revanced_vp9_summary">Tap to force usage of the VP9 codec</string>
     <string name="revanced_vp9_summary_off">VP9 codec not forced</string>
     <string name="revanced_vp9_summary_on">VP9 codec is enabled by default for supported devices, disable if you encounter stuttering/slowness in videos</string>
